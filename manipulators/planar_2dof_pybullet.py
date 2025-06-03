@@ -49,3 +49,5 @@ class PlanarManipulator2DOFPyBullet:
 
     def change_dynamics(self, idx, m, I):
         self.client.changeDynamics(0, idx, mass=m, localInertiaDiagonal=I)
+
+
