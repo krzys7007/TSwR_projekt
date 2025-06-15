@@ -7,7 +7,7 @@ class ADRController(Controller):
     def __init__(self, Tp, params):
         self.joint_controllers = []
         for param in params:
-            self.joint_controllers.append(ADRCJointController(*param, Tp))
+            self.joint_controllers.append(ADRCJointController(*param, Tp))  
 
     def calculate_control(self, x, q_d, q_d_dot, q_d_ddot):
         u = []
